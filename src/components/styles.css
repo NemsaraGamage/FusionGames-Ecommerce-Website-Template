@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Oswald-VariableFont';
+  src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+
+.backColor{
+    background-color: ghostwhite;
+}
+
+/* navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: ghostwhite;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin-right: auto;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+  }
+  
+  .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* ============================== */
+
+  .banner{
+    margin-top: 20px;
+}
+
+    .banner img{
+        width: 100%;
+    }
+
+    /* ========================= */
+    .addDisplay {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5%;
+        padding: 2% 0 2% 0;
+      }
+      
+      .addDisplay > div {
+        flex: 1 0 200px; /* Adjust the width as needed */
+        margin: 10px;
+        text-align: center;
+        padding-bottom: 2%;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease; 
+      }
+      
+      .addDisplay img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+      }
+      
+      .addDisplay p {
+        margin-top: 10px;
+      }
+
+      .addDisplay p:nth-last-of-type(1) {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Oswald-VariableFont;
+      }
+
+      /* ============================= */
+
+      .carsolCon {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 3.8%;
+      }
+
+      .carsolCon h4{
+        font-size: 28px;
+        margin-bottom: 3%;
+        font-family: Oswald-VariableFont;
+      }
+
+      .slick-slide > div {
+        border-radius: 15px;
+        margin: 0 20px 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease; 
+      }
+      .slick-list {
+        margin: 0 -10px;
+      }
+      
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 420px;
+        color: black;
+        cursor: pointer;
+      }
+      
+      .card-top h1 {
+        font-size: 0.9rem;
+        margin: 20px;
+      }
+      
+      .card-top > img {
+        width: 70%;
+        object-fit: cover;
+        margin: 0 auto;
+        margin-bottom: 10%;
+      }
+      
+      .card-bottom {
+        margin: 10px 20px;
+      }
+
+      .card-bottom h3{
+        margin-top: 5%;
+      }
+      
+      .card-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .category::before {
+        content: '';
+        background: black;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+        height: 2px;
+      }
+
+      .discountSlash{
+        text-decoration: line-through;
+      }
+
+      .card-bottom h3:nth-of-type(2){
+        text-decoration: none;
+        margin-bottom: 10px;
+        margin-top: -5px;
+        color: red;
+      }
+    /* =================================== */
+
+    .ban2Con{
+      margin-top: 10%;
+    }
+
+    .ban2Con img{
+      width: 100%;
+    }
+
+    .custom-prev-arrow::before,
+    .custom-next-arrow::before {
+      color: black;
+    }
+
+    /* ================================== */
+
+    .cataH1{
+      font-size: 28px;
+      margin-top: 4%;
+      margin-bottom: 2%;
+      font-family: Oswald-VariableFont;
+    }
+
+    .cataOptionCon {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+    
+    .product-logo {
+      max-width: 260px;
+      height: auto;
+      margin: 50px;
+      border-radius: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease; 
+      cursor: pointer;
+    }
+
+    /* ================================ */
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      font-weight: 900;
+    }
+    
+    .back-to-top.show {
+      opacity: 1;
+    }
+    
+    .back-to-top:hover {
+      background-color: #555;
+    }
+
+    /* ============================= */
+
+  .footer {
+    background-color: #416075;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 9%;
+  }
+
+  .footer h4{
+    font-size: 30px;
+    margin-bottom: 3%;
+  }
+
+  .links{
+    margin-bottom: 2%;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+  
+  .footer-icons {
+    margin-bottom: 20px;
+  }
+  
+  .icons img , .icons img:nth-of-type(1) {
+    width: 25px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+
+
+
+  @media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 5%;
+      }
+    
+      .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+      }
+    
+      .menu.active {
+        display: flex;
+      }
+    
+      .menu.active li {
+        margin: 10px 0;
+      }
+
+      .menu li a {
+        font-size: 15px;
+      }
+
+    /* ========================== */
+
+    .banner img{
+        width: 95%;
+        height: 13vh;
+    }
+
+    /* ======================== */
+
+    .addDisplay > div {
+        flex-basis: 95%; 
+        border-radius: 10px;
+        margin-bottom: 8%;
+    }
+  
+    .addDisplay img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    /* ============================ */
+
+    .carsolCon {
+      width: 85%;
+      margin: 0 auto;
+    }
+    
+    .carsolCon h4{ 
+      margin-bottom: 8%;
+    }
+
+    .card-bottom h3{
+      margin-top: 15%;
+    }
+    
+    /* ============================== */
+
+    .ban2Con{
+      margin-top: 23%;
+      margin-bottom: 15%;
+    }
+
+    .ban2Con img{
+      width: 95%;
+      height: 13vh;
+    }
+
+    /* ================================== */
+
+    .carsolCon h4{
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    /* ==================================== */
+
+    .product-logo {
+      margin-bottom: -20px;
+    }
+
+    /* ============================= */
+
+    .footer{
+      margin-top: 15%;
+    }
+
+    .bottom-nav {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .nav-link {
+      margin-top: 10px;
+    }
+    
+}
+
+@media (hover: hover) {
+    .addDisplay > div:hover, .slick-slide > div:hover, .product-logo:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjust the hover shadow values as needed */
+    }
+}
